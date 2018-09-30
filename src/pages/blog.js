@@ -14,15 +14,29 @@ export default class Blog extends React.Component {
                   playsinline: 1
                 }
               };
-           
+
+              const BasicSvg = () =>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0%" height="0%">
+                    <filter id="luminanceToAlpha">
+                        <feColorMatrix type="luminanceToAlpha" values=""/>
+                    </filter>
+                </svg>
+
+              const VideoFilter = {
+                    filter: 'brightness(200%)'
+              }
+                
               return (
 
                 <Layout>
-                    <YouTube
-                    videoId="vkEOOLlkMUQ"
-                    opts={opts}
-                    onReady={this._onReady}
-                    />
+                    <BasicSvg />
+                        <YouTube 
+                        className="VideoFilter"
+                        videoId="vkEOOLlkMUQ"
+                        opts={opts}
+                        onReady={this._onReady}
+                        />
+                   
                 </Layout>
               );
             }
