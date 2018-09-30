@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "title": "My my my",
+            "subtitle": "This is what you need",
+            "image": "/images/project1.gif"
+        },
+        {
+            "title": "Hi babes",
+            "subtitle": "Can we have a quick chat",
+            "image": "/images/project2.gif"
+        }
+    ]
+}
