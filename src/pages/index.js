@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import ProjectCard from "../components/ProjectCard";
-import staticdata from "../../staticdata.json"
+// import staticdata from "../../staticdata.json"
 import Layout from '../components/layout'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -43,7 +43,6 @@ export default class Index extends React.Component {
             </div>
             <div className="ProjectsGroup">
               {data.allContentfulProject.edges.map((card, index) => (
-                console.log(card),
                 <ProjectCard key={index}
                   title={card.node.title}
                   subtitle={card.node.subtitle}

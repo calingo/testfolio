@@ -29,7 +29,6 @@ module.exports = {
       options: {  
         spaceId: 'ckfbdf2pvmkz',
         accessToken: 'd7d7af13daaf2d59b38ea3fd9757744f42ac24dd8d55d9e2943d694b588c94f6'
-
       }
     }
   ],
