@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import YouTube from 'react-youtube';
+import EffectSlider from '../components/effectSlider';
+
  
 
 export default class Blog extends React.Component {
@@ -22,9 +24,9 @@ export default class Blog extends React.Component {
                     </filter>
                 </svg>
 
-              const VideoFilter = {
-                    filter: 'brightness(200%)'
-              }
+              // const VideoFilter = {
+              //       filter: 'brightness(200%)'
+              // }
                 
               return (
 
@@ -36,7 +38,7 @@ export default class Blog extends React.Component {
                         opts={opts}
                         onReady={this._onReady}
                         />
-                   
+                        <EffectSlider />
                 </Layout>
               );
             }

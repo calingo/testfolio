@@ -31,7 +31,3 @@
 .HeaderScrolled {
     background-color: black;
 }
-
-.VideoFilter {
-    filter: invert(100%);
-}

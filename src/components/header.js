@@ -5,7 +5,8 @@ import './header.css'
 class Header extends React.Component {
     
     state = {
-        hasScrolled: false
+        hasScrolled: false,
+        value: 50
     }
     
     componentDidMount() {
